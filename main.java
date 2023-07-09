@@ -15,40 +15,20 @@ public class main {
         
 
 
-        Sem4One sem4One = new Sem4One();
-        Deque<Integer> num1Deque = new ArrayDeque<>(Arrays.asList(new Integer[]{1, 2, 3}));
-		Deque<Integer> num2Deque = new ArrayDeque<>(Arrays.asList(new Integer[]{-3, 2, 2}));
-		
-		int num1 = dequeToInt(num1Deque);
-		int num2 = dequeToInt(num2Deque);
-		
-		//task 1
-		System.out.println(intToLinkedList(num1 + num2));
-		
-		//task2
-		System.out.println(intToLinkedList(num1 * num2));
+    Sem4One sem4One = new Sem4One();
 
 
 
 
+    // Sem2One sem2One = new Sem2One();
+
+    // Sem2Two sem2Two = new Sem2Two();
+
+    // Sem3One sem3One = new Sem3One();
 
 
 
-//           //task1
-// 	    String jsonString = new Scanner(System.in).nextLine();
-// 		String[] params = jsonString.replaceAll("[{} ]", "")
-//  .replace(":", "=")
-//  .split(",");
-        
 
-    // Logger logger = Logger.getLogger("Main");
-	// String filePath = "./LogFile.log";
-	// File newFile = new File(filePath);
-	// newFile.createNewFile();
-	// FileHandler fileHandler = new FileHandler(filePath);
-    // logger.addHandler(fileHandler);
-    // SimpleFormatter formatter = new SimpleFormatter();
-    // fileHandler.setFormatter(formatter);
 
         // TaskOne taskOne = new TaskOne();
         // taskOne.triangularNumber();

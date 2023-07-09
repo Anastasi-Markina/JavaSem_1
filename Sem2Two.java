@@ -7,11 +7,19 @@ import java.util.logging.SimpleFormatter;
 public class Sem2Two {
     
 //task2 Реализуйте алгоритм сортировки пузырьком числового массива, результат после каждой итерации запишите в лог-файл
-		
-		//task2-logging setup
-    
+	public Sem2Two (){
+
         
-    //task2-bubble sort
+       Logger logger = Logger.getLogger("Main");
+	    String filePath = "LogFile.txt";
+		File newFile = new File(filePath);
+		newFile.createNewFile();
+		FileHandler fileHandler = new FileHandler(filePath);
+        logger.addHandler(fileHandler);
+        SimpleFormatter formatter = new SimpleFormatter();
+        fileHandler.setFormatter(formatter);
+
+        //task2-bubble sort
         int[] nums = new int[]{1, 6, 123, -6, 32, -77};
         int temp;
         boolean lastIteration;
@@ -26,7 +34,6 @@ public class Sem2Two {
                     lastIteration = false;
                 }
             }
-            Logger logger;
             logger.info(i+1 + " iteration result: " + Arrays.toString(nums));
             if(lastIteration){
                 break;
@@ -34,6 +41,6 @@ public class Sem2Two {
         }
         logger.info("sorted successfully");
         System.out.println("\ntask2 result:\n" + Arrays.toString(nums) 
-        +"\ntask2 logging at " + filePath);
-    }
+ +"\ntask2 logging at " + filePath);
+	}
 }
