@@ -11,7 +11,14 @@ public class main {
 
 
     public static void main(String[] args) {
-
+        Sem5One sem5One = new Sem5One();
+        sem5One.addPhoneNumber("Ivan", "89198196848");
+        sem5One.addPhoneNumber("Ivan", "89198196745");
+        sem5One.addPhoneNumber("Vlad", "874312423");
+        sem5One.addPhoneNumber("Vlad", "88005553535");
+        sem5One.addPhoneNumber("Vlad", "777666555");
+        sem5One.addPhoneNumber("Alla", "1432288");
+        sem5One.printAllContacts();
         
 
 
